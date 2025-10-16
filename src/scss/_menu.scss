@@ -1,0 +1,52 @@
+.menu {
+  flex: 1;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    background: var(--sub-bg);
+    color: var(--sub-text);
+  }
+
+  .sort, .filter, .settings {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 1rem 0 0.4rem;
+    background: var(--sub-bg);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    .sortName {
+      width: 100%;
+      font-size: 1.15rem;
+    }
+
+    button {
+      background: var(--extra-bg);
+      padding: 0.4rem 0.8rem;
+      border-radius: 0.35rem;
+    }
+
+    .custom {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        font-size: 0.9rem;
+      }
+
+      button {
+        height: 100%;
+        aspect-ratio: 1 / 1;
+      }
+    }
+  }
+}
